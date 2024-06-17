@@ -1,12 +1,25 @@
 #rose-img {
   width: 50vw;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #homepage-header {
   text-align: center;
   position: absolute;
-  top: 30px;
+  top: 10px;
   width: 50%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .homepage-header-text {
@@ -32,6 +45,42 @@
   font: 75px Arial, sans-serif;
   translate: 49vw;
   width: 2vw;
+}
+
+#home-description {
+  color: #ffffff;
+  position: absolute;
+  text-align: center;
+  font: 30px Helvetica, sans-serif;
+  top: 40vh;
+  width: 50vw;
+  translate: 50vw;
+}
+
+#description-text {
+  animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#home-btn-container {
+  position: absolute;
+  text-align: center;
+  top: 75vh;
+  width: 50vw;
+  translate: 50vw;
+  scale: 1.5;
+}
+
+.home-btn {
+  position: relative;
+  margin: 10px 10px 10px 10px;
 }
 
 body {
@@ -62,5 +111,25 @@ body {
 
   .homepage-header-text {
     font: 5vw Helvetica, sans-serif;
+  }
+
+  #home-description {
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    font: 5vw Helvetica, sans-serif;
+    top: 30vh;
+    width: 50vw;
+    translate: 25vw;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  #home-btn-container {
+    position: absolute;
+    text-align: center;
+    top: 75vh;
+    width: 50vw;
+    translate: 25vw;
+    scale: 1.5;
   }
 }

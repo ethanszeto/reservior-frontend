@@ -2,9 +2,3 @@ body {
   background-color: #241515;
   height: 100vh;
 }
-
-.undraggable-img {
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
