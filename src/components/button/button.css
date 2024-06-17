@@ -1,0 +1,25 @@
+.btn {
+  padding: 0px;
+  transition: transform 0.3s;
+  background: #000000;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: Monaco, monospace;
+  font-size: 15px;
+  height: 30px;
+  width: 150px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.btn span {
+  transition: transform 0.05s;
+}
+
+.btn:hover span {
+  transform: scale(0.95);
+}

@@ -1,9 +1,8 @@
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home/Home.js";
-import About from "./pages/About/About.js";
-import Contact from "./pages/Contact/Contact.js";
-import NoPage from "./pages/NoPage/NoPage.js";
+import Home from "./pages/Home/Home";
+import SignUp from "./pages/SignUp/SignUp";
+import LogIn from "./pages/LogIn/LogIn";
+import NoPage from "./pages/NoPage/NoPage";
 import "./App.css";
 
 function App() {
@@ -11,8 +10,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="sign-up" element={<SignUp />} />
+        <Route path="log-in" element={<LogIn />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
