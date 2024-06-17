@@ -75,7 +75,7 @@
   top: 75vh;
   width: 50vw;
   translate: 50vw;
-  scale: 1.5;
+  scale: 1.75;
 }
 
 .home-btn {
@@ -130,6 +130,6 @@ body {
     top: 75vh;
     width: 50vw;
     translate: 25vw;
-    scale: 1.5;
+    scale: 1.75;
   }
 }
