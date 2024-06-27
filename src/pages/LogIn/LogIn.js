@@ -2,31 +2,19 @@ import { useState } from "react";
 import Button from "../../components/button/button";
 import TextInput from "../../components/textinput/TextInput";
 import "./LogIn.css";
+import send from "../../util/send.js";
 
 const LogIn = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const login = async (e) => {
-    // fetch here
     try {
-      const response = await fetch("http://localhost:7777/user/login", {
-        method: "POST",
-        credentials: "include",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ username: username, password: password }),
-      });
+      const response = await send("/user/login", "POST", { username: username, password: password });
 
-      if (response.error === undefined) {
-        //document.cookie = loginToken;
-        console.log(response);
-        response.headers.forEach((header) => {
-          console.log(header);
-        });
-      }
+      console.log(response);
     } catch (e) {
+      //display, failed login message
       console.log(e);
     }
 
