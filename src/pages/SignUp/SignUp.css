@@ -1,0 +1,47 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.header {
+  color: #ffffff;
+}
+
+.panel {
+  text-align: center;
+  margin-top: 10vh;
+  translate: 50%;
+  width: 50%;
+  border-radius: 5px;
+  border-width: 5px;
+  border-color: #000000;
+  border-style: solid;
+}
+
+#text-input-panel {
+  translate: 25%;
+  width: 50%;
+}
+
+.text-input {
+  scale: 1.5;
+  margin: 10px 10px 10px 10px;
+  padding: 5px 5px 5px 5px;
+}
+
+.login-btn {
+  scale: 1.5;
+  margin: 30px 10px 30px 10px;
+}
+
+@media screen and (max-width: 1280px) {
+  .panel {
+    text-align: center;
+    margin-top: 10vh;
+    translate: 5%;
+    width: 90%;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: #000000;
+    border-style: solid;
+  }
+}

@@ -10,7 +10,10 @@ const LogIn = () => {
 
   const login = async (e) => {
     try {
-      const response = await send("/user/login", "POST", { username: username, password: password });
+      const response = await send("/user/login", "POST", {
+        username: username,
+        password: password,
+      });
 
       console.log(response);
     } catch (e) {
